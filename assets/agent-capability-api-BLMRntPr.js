@@ -1,0 +1,1 @@
+import"./vendor-react-B3EbH8jG.js";import{aj as t}from"./index-D2Matm62.js";import"./vendor-i18n-CRHO_jOs.js";async function p(a){return(await t(`/api/v1/workspaces/${encodeURIComponent(a)}/agent-capabilities`)).data}export{p as f};

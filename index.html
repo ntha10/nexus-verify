@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NEXUS</title>
+    <script>
+      // Runs before first paint: reads the same two localStorage keys as
+      // src/ui/theme/nexus-theme.ts and src/i18n/language.ts. 'system' (and a
+      // missing value) falls through to prefers-color-scheme, which is why the
+      // dark test is "not light" rather than "== system".
+      (function () {
+        try {
+          var pref = localStorage.getItem('nexus-theme');
+          var dark =
+            pref === 'dark' ||
+            (pref !== 'light' &&
+              window.matchMedia &&
+              window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (dark) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.style.colorScheme = 'light';
+          }
+          var lang = localStorage.getItem('nexus-lang');
+          if (lang === 'vi' || lang === 'en') {
+            document.documentElement.lang = lang;
+          }
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-D2Matm62.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/vendor-react-B3EbH8jG.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-i18n-CRHO_jOs.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-router-lufLsXnr.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-query-Bz-9cpcP.js">
+    <link rel="modulepreload" crossorigin href="/assets/vendor-CNLIKDNa.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-FIQgCp0f.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

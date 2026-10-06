@@ -1,0 +1,1 @@
+function c(t,n){return t.includes(n)?t.filter(r=>r!==n):[...t,n]}function f(t,n,r=e=>e){return t.length===0?n:t.length===1?r(t[0]):`${r(t[0])} +${t.length-1}`}function g(t,n){if(t.length!==n.length)return!1;const r=[...t].sort(),e=[...n].sort();return r.every((i,o)=>i===e[o])}export{f as d,g as s,c as t};

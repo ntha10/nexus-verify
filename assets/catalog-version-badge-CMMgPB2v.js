@@ -1,0 +1,1 @@
+function r(e){return e==="published"?"published":e==="draft"?"draft":e==="ready_for_review"?"readyForReview":e==="deprecated"?"deprecated":e==="archived"?"archived":"draft"}function i(e){return e==="deprecated"||e==="archived"}export{r as c,i};

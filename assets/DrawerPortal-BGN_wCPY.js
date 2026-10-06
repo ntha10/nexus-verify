@@ -1,0 +1,1 @@
+import{e as o,r as a}from"./vendor-react-B3EbH8jG.js";function d({children:r,onClose:e}){return o.useEffect(()=>{const t=n=>{n.key==="Escape"&&e()};return document.addEventListener("keydown",t),()=>document.removeEventListener("keydown",t)},[e]),typeof document>"u"?null:a.createPortal(r,document.body)}export{d as D};

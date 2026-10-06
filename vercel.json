@@ -1,0 +1,1 @@
+{"rewrites":[{"destination":"https://nexus-vercel-2owvhcpus-nexus-2777.vercel.app/api/:path*","source":"/api/:path*"},{"destination":"/index.html","source":"/:path((?!api/|assets/|verify-login.html|favicon.svg).*)"}]}
