@@ -1,1 +1,0 @@
-import"./vendor-react-B3EbH8jG.js";import{aj as o}from"./index-D2Matm62.js";import"./vendor-i18n-CRHO_jOs.js";function n(e){return o(`/api/v1/template-versions/${encodeURIComponent(e)}/review-form`)}function a(e,r){return o(`/api/v1/builder/template-versions/${encodeURIComponent(e)}/review-form`,{method:"PUT",body:JSON.stringify({schema:r})})}export{n as f,a as s};

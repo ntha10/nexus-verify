@@ -1,1 +1,0 @@
-import{cq as o,aM as s}from"./index-D2Matm62.js";function a(e){return e.toLowerCase().replace(/[._-]/g," ").replace(/\b\w/g,t=>t.toUpperCase())}const r={en:s,vi:o};function c(e,t){const n=r[t.split("-")[0]??t]??r.en;return(n==null?void 0:n[e])??a(e)}export{c as e};

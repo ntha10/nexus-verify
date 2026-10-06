@@ -1,0 +1,1 @@
+import"./vendor-react-B3EbH8jG.js";import{aj as e}from"./index-BwY1_5TB.js";import"./vendor-i18n-CRHO_jOs.js";function i(t){return e(`/api/v1/workspaces/${encodeURIComponent(t)}/settings`)}function r(t,o){return e(`/api/v1/workspaces/${encodeURIComponent(t)}/settings`,{method:"PATCH",body:JSON.stringify(o)})}export{i as f,r as p};
